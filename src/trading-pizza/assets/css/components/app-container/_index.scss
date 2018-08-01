@@ -1,0 +1,6 @@
+.app-container {
+  max-width: #{$max-width + 24 * 2}px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0 24px;
+}

@@ -1,0 +1,50 @@
+{
+  "name": "trading-pizza",
+  "version": "1.0.0",
+  "description": "## Design Inspired - https://usertesters.io/",
+  "main": "dist/trading-pizza/index.html",
+  "browserslist": [
+    "last 2 versions",
+    "ie >= 11",
+    "android >= 4.2"
+  ],
+  "scripts": {
+    "start": "NODE_ENV=development sh build/scripts/start.sh",
+    "build": "NODE_ENV=production sh build/scripts/build.sh",
+    "server": "./node_modules/.bin/browser-sync start --config bs-config.js"
+  },
+  "data": {
+    "name": "Trading Pizza"
+  },
+  "keywords": [],
+  "author": "Wicked Pizza",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.24.6",
+    "cssnano": "^4.0.5",
+    "date-fns": "^1.29.0",
+    "gulp": "^3.9.1",
+    "gulp-header": "^2.0.5",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.1",
+    "lodash.template": "^4.4.0",
+    "vue-loader": "^15.2.6",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.1.3",
+    "the-style.css": "^1.0.4",
+    "vue": "^2.5.16",
+    "vuex": "^3.0.1"
+  }
+}

@@ -1,0 +1,5 @@
+.DS_STORE
+.gulp-scss-cache
+.sass-cache
+Thumbs.db
+node_modules*
