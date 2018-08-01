@@ -1,7 +1,7 @@
 # Trading Pizza
 
 ## URLs
-- https://toushi-kyokasho.com/what-is-elliot-wave/
+- [Published](https://wicked-pizza.github.io/trading-pizza/index.html)
 
 ## Design Inspired
 - https://usertesters.io/
