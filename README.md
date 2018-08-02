@@ -5,3 +5,4 @@
 
 ## Design Inspired
 - https://usertesters.io/
+- https://www.styleurl.app/ ブラウザ部分を参考
