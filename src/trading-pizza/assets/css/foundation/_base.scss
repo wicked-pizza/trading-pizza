@@ -1,10 +1,20 @@
 html {
-  font-family: "-apple-system,system-ui, BlinkMacSystemFont", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-size: 16px;
+
 }
 
 body {
+  font-family: "Noto Sans Japanese", "-apple-system,system-ui, BlinkMacSystemFont", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 16px;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: 'palt';
+  font-feature-settings: 'palt';
+  text-rendering: optimizeLegibility;
   line-height: 1.4;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow-x: hidden;
+  overflow-y: scroll;
   color: #222;
 }
 
