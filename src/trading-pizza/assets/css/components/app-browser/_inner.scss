@@ -1,0 +1,6 @@
+.app-browser_inner {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: #{$browser-offset-y}px 24px 0;
+}

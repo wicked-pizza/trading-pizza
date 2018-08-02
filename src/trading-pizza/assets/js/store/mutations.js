@@ -11,5 +11,11 @@ export default {
 
   SET_TABLE02: (state, { data }) => {
     state.table02 = data
+  },
+
+  SET_BROWSER_SHOW: (state, { show, title, url }) => {
+    state.browser.show = show
+    state.browser.url = url
+    state.browser.title = title
   }
 }

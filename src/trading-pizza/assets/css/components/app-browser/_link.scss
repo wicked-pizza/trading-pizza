@@ -1,0 +1,17 @@
+.app-browser_link {
+  $my-offset: (32 - 24) / 2;
+
+  display: inline-block;
+  position: absolute;
+  top: #{$my-offset}px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+
+  &:hover {
+    color: rgba(255,255,255,.7);
+  }
+}

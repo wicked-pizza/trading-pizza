@@ -1,0 +1,21 @@
+.app-browser_title {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  line-height: #{$browser-header-height}px;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+
+  & span {
+
+  }
+
+  & small {
+    padding: 0 0 0 8px;
+    font-size: 11px;
+    color: rgba(255,255,255,.5);
+  }
+}

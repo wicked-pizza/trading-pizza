@@ -17,5 +17,17 @@ export default {
 
   table02 (state) {
     return state.table02
+  },
+
+  isBrowserShow (state) {
+    return state.browser.show
+  },
+
+  browserTitle (state) {
+    return state.browser.title
+  },
+
+  browserUrl (state) {
+    return state.browser.url
   }
 }

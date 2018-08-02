@@ -6,17 +6,7 @@
     <ul class="app-useful-list_items">
       <template v-for="item in items">
         <li class="app-useful-list_item" v-if="show(item.fields.Enabled)">
-          <a :href="item.fields.URL" target="_blank">
-            <dl class="app-useful-item">
-              <dt class="app-useful-item_name" v-text="item.fields.Name"/>
-              <dd class="app-useful-item_about" v-if="showAbout(item.fields.About)">
-                <blockquote v-text="item.fields.About"/>
-              </dd>
-              <dd class="app-useful-item_category">
-                <small v-text="item.fields.Category"/>
-              </dd>
-            </dl>
-          </a>
+          <my-item :data="item.fields"/>
         </li>
       </template>
     </ul>
@@ -24,6 +14,8 @@
 </template>
 
 <script>
+import MyItem from './AppUsefulItem.vue'
+
 export default {
   computed: {
     items () {
@@ -33,11 +25,10 @@ export default {
   methods: {
     show (enabled) {
       return Number(enabled) != 0
-    },
-
-    showAbout (s) {
-      return (s != null && s !== '')
     }
+  },
+  components: {
+    MyItem
   }
 }
 </script>

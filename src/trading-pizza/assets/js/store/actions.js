@@ -11,6 +11,10 @@ export default {
     commit('SET_TABLE02', amount)
   },
 
+  SET_BROWSER_SHOW: ({ commit }, amount) => {
+    commit('SET_BROWSER_SHOW', amount)
+  },
+
   END: ({ commit }, amount) => {
 
   }
