@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+  </head>
+  <body>
+    <div style="width: 400px; height: 400px;">
+      <canvas id="chart"></canvas>
+    </div>
+
+    <script>
+      var ctx = document.getElementById('chart').getContext('2d')
+      var scatter_data = {
+        datasets: [{
+          label: '日付',
+          pointRadius: 5,
+          data: [
+            { x: new Date('2019/7/24 15:00'), y: 13 },
+            { x: new Date('2019/7/24 16:00'), y: 50 },
+            { x: new Date('2019/7/24 17:00'), y: 10 },
+            { x: new Date('2019/7/24 18:00'), y: 100 },
+          ]
+        }]
+      }
+      var myChart = Chart.Scatter(ctx, {
+        data: scatter_data,
+        options: {
+          title: {
+            display: true,
+            text: 'graph'
+          },
+          scales: {
+            xAxes: [{
+              type: 'time',
+              time: {
+                displayFormats: {
+                  quarter: 'H'
+                }
+              }
+            }]
+          }
+        }
+      })
+    </script>
+  </body>
